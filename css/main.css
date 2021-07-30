@@ -773,12 +773,47 @@ img {
   box-shadow: var(--portfolio-wigets-shadow);
 }
 
+@media screen and (min-width: 768px) {
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .projects__blocks {
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects__blocks {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .projects__blocks:not(:first-child) {
+    margin-top: 30px;
+  }
+}
+
 .projects__content {
   padding: 20px 24px;
   background: var(--title-text-color);
   border-right: 1px solid var(--border-projects__content);
   border-bottom: 1px solid var(--border-projects__content);
   border-left: 1px solid var(--border-projects__content);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .projects_crutch {
+    padding-bottom: 56px;
+  }
 }
 
 .projects__list {
@@ -792,19 +827,6 @@ img {
 .projects__links,
 .projects__links:visited {
   color: var(--primary-color);
-}
-
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: calc(-1 * var(--margin));
-  margin-left: calc(-1 * var(--margin));
-}
-
-.projects__blocks {
-  flex-basis: calc(100% / 3 - var(--margin));
-  margin-top: var(--margin);
-  margin-left: var(--margin);
 }
 
 .projects__title {

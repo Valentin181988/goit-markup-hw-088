@@ -75,6 +75,7 @@ ol {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .list {
@@ -156,7 +157,8 @@ img {
   transition: background-color 1000ms var(--cubic), box-shadow 250ms var(--cubic);
 }
 
-.modal-btn:hover, .modal-btn:focus {
+.modal-btn:hover,
+.modal-btn:focus {
   background-color: var(--hero-button-hover-color);
   box-shadow: var(--shadow-hero-button);
 }
@@ -176,7 +178,8 @@ img {
   transition: background-color 250ms var(--cubic);
 }
 
-.social-link-list__link:hover, .social-link-list__link:focus {
+.social-link-list__link:hover,
+.social-link-list__link:focus {
   background-color: var(--accent-color);
 }
 
@@ -277,7 +280,8 @@ img {
   color: var(--primary-color);
 }
 
-.menu__link:hover, .menu__link:focus {
+.menu__link:hover,
+.menu__link:focus {
   color: var(--accent-color);
 }
 
@@ -303,7 +307,8 @@ img {
   color: var(--secondary-text-color);
 }
 
-.menu-contacts__link:hover, .menu-contacts__link:focus {
+.menu-contacts__link:hover,
+.menu-contacts__link:focus {
   color: var(--accent-color);
 }
 
@@ -357,7 +362,7 @@ img {
 .overlay {
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(var(--gradient-hero)), url("../images/hero/Img.jpg");
+  background-image: linear-gradient(var(--gradient-hero)), url('../images/hero/Img.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -503,6 +508,24 @@ img {
   margin-left: calc(-1 * var(--margin));
 }
 
+@media screen and (min-width: 768px) {
+  .our-team-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+}
+
+.our-team-blocks__wrapper {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-top: var(--margin);
+  margin-left: var(--margin);
+  background: var(--title-text-color);
+  /* material shadow v1 */
+  box-shadow: var(--box-shadow);
+}
+
 .our-team-blocks__name,
 .our-team-blocks__specialty {
   font-weight: 500;
@@ -522,20 +545,6 @@ img {
 
 .our-team__title {
   margin-bottom: 50px;
-}
-
-.our-team-blocks {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.our-team-blocks__wrapper {
-  flex-basis: calc(100% / 4 - 30px);
-  margin-top: var(--margin);
-  margin-left: var(--margin);
-  background: var(--title-text-color);
-  /* material shadow v1 */
-  box-shadow: var(--box-shadow);
 }
 
 .our-team-thumb {
@@ -568,7 +577,8 @@ img {
   transition: border 250ms var(--cubic);
 }
 
-.clients-list__links:hover, .clients-list__links:focus {
+.clients-list__links:hover,
+.clients-list__links:focus {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
 }
@@ -605,7 +615,8 @@ img {
   transition: color 250ms var(--cubic);
 }
 
-.adress-list__link:hover, .adress-list__link:focus {
+.adress-list__link:hover,
+.adress-list__link:focus {
   color: var(--accent-color);
 }
 
@@ -730,10 +741,12 @@ img {
   padding-top: 6px;
   padding-bottom: 6px;
   border: none;
-  transition: color 250ms var(--cubic), background-color 250ms var(--cubic), box-shadow 250ms var(--cubic);
+  transition: color 250ms var(--cubic), background-color 250ms var(--cubic),
+    box-shadow 250ms var(--cubic);
 }
 
-.wigets__link:hover, .wigets__link:focus {
+.wigets__link:hover,
+.wigets__link:focus {
   background-color: var(--accent-color);
   color: var(--title-text-color);
   box-shadow: var(--portfolio-wigets-shadow);
@@ -812,7 +825,8 @@ img {
   transition: box-shadow 250ms var(--cubic);
 }
 
-.projects__links:hover, .projects__links:focus {
+.projects__links:hover,
+.projects__links:focus {
   box-shadow: var(--box-shadow-pr);
 }
 
@@ -891,7 +905,8 @@ img {
   margin-top: 4px;
 }
 
-.modal-form__input:hover, .modal-form__input:focus {
+.modal-form__input:hover,
+.modal-form__input:focus {
   border-color: var(--accent-color);
 }
 
@@ -910,7 +925,8 @@ img {
   transition: fill 250ms var(--cubic);
 }
 
-.modal-form__icon:hover, .modal-form__icon:focus {
+.modal-form__icon:hover,
+.modal-form__icon:focus {
   fill: var(--accent-color);
 }
 
@@ -930,7 +946,8 @@ img {
   transition: border-color 250ms var(--cubic);
 }
 
-.modal-form__message:hover, .modal-form__message:focus {
+.modal-form__message:hover,
+.modal-form__message:focus {
   border-color: var(--accent-color);
 }
 
@@ -980,7 +997,7 @@ img {
 }
 
 .modal-form__checkbox:checked + .modal-form__checkbox-label::before {
-  background-image: url("../images/check.svg");
+  background-image: url('../images/check.svg');
   border: none;
   background-position: center;
   background-repeat: no-repeat;

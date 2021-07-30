@@ -11,8 +11,19 @@
   }
 }
 
+.footer_wrapper {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 60px;
+  }
+}
+
 .footer__footer-form {
-  margin-left: 93px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 
 .adress-title {
@@ -41,9 +52,11 @@
   color: var(--mail-color);
 }
 
-/*.footer-contacts {
-  margin-right: 83px;
-}*/
+.footer-contacts {
+  @media screen and (min-width: 1200px) {
+    margin-right: 83px;
+  }
+}
 
 .footer-contacts,
 .connect,
@@ -53,7 +66,9 @@
 
 .connect,
 .subscribe {
-  margin-top: 60px;
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
 }
 
 .footer-title {

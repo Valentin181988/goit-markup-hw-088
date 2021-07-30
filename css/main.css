@@ -528,7 +528,7 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .social-link-list__item:not(:first-child) {
+  .our-team-blocks__wrapper:not(:first-child) {
     margin-top: 30px;
   }
 }

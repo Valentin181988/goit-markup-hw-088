@@ -1,12 +1,20 @@
 .our-job {
-  &__job-cards {
-    margin-top: calc(-1 * var(--margin));
-    margin-left: calc(-1 * var(--margin));
+  @media screen and (max-width: 1199px) {
+    display: none;
   }
+}
 
-  &_padding {
-    padding-top: 0;
-  }
+.job-cards {
+  @include parentGrid();
+}
+
+.job-cards__item {
+  @include itemGrid();
+  flex-basis: calc((100% - 3 * 30px) / 3);
+}
+
+.our-job_padding {
+  padding-top: 0;
 }
 
 .main-title {
@@ -19,17 +27,6 @@
 
 .main-title_position {
   margin-bottom: 50px;
-}
-
-.job-cards {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.job-cards__item {
-  flex-basis: calc((100% - 3 * var(--margin)) / 3);
-  margin-top: var(--margin);
-  margin-left: var(--margin);
 }
 
 .job-cards__images {

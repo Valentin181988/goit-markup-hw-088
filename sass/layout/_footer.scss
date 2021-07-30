@@ -2,10 +2,17 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--background-color);
+}
 
-  &__footer-form {
-    margin-left: 93px;
+.position {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
   }
+}
+
+.footer__footer-form {
+  margin-left: 93px;
 }
 
 .adress-title {
@@ -34,8 +41,15 @@
   color: var(--mail-color);
 }
 
-.footer-contacts {
+/*.footer-contacts {
   margin-right: 83px;
+}*/
+
+.footer-contacts,
+.connect,
+.subscribe {
+  text-align: center;
+  margin-top: 60px;
 }
 
 .footer-title {

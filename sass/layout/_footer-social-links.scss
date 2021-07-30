@@ -10,11 +10,6 @@
   fill: var(--title-text-color);
 }
 
-.position {
-  display: flex;
-  align-items: baseline;
-}
-
 .social-link-list__item:not(:last-child) {
   margin-right: 10px;
 }

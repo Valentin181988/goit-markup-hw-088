@@ -729,12 +729,24 @@ img {
 
 .wigets {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 50px;
+}
+
+@media screen and (min-width: 480px) {
+  .wigets {
+    justify-content: center;
+  }
 }
 
 .widgets__item:not(:last-child) {
   margin-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .widgets__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
 }
 
 .wigets__link {

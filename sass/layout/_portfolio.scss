@@ -1,10 +1,17 @@
 .wigets {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 50px;
+
+  @media screen and (min-width: 480px) {
+    justify-content: center;
+  }
 }
 
 .widgets__item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
   margin-right: 8px;
 }
 

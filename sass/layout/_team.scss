@@ -12,12 +12,12 @@
   background: var(--title-text-color);
   box-shadow: var(--box-shadow);
 
-  @media screen (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     @include itemGrid();
     flex-basis: calc((100% - 2 * 30px) / 2);
   }
 
-  @media screen (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 4 * 30px) / 4);
   }
 }

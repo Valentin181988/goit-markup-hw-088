@@ -1,0 +1,48 @@
+.our-team {
+  background-color: var(--widgets-link-background-color);
+
+  &__our-team-blocks {
+    margin-top: calc(-1 * var(--margin));
+    margin-left: calc(-1 * var(--margin));
+  }
+}
+
+.our-team-blocks__name,
+.our-team-blocks__specialty {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.our-team-blocks__specialty {
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
+  color: var(--secondary-text-color);
+}
+
+.our-team__title {
+  margin-bottom: 50px;
+}
+
+.our-team-blocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.our-team-blocks__wrapper {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-top: var(--margin);
+  margin-left: var(--margin);
+  background: var(--title-text-color);
+  /* material shadow v1 */
+
+  box-shadow: var(--box-shadow);
+}
+
+.our-team-thumb {
+  padding: 30px;
+}

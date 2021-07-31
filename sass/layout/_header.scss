@@ -211,5 +211,60 @@
 
 .mobile-menu__container {
   position: relative;
-  height: 200px;
+}
+
+.nav-list_link,
+.menu-list_tel {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+}
+
+.menu-list_tel {
+  font-size: 34px;
+}
+
+.menu-list_mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  color: var(--secondary-text-color);
+}
+
+.menu-social-list__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+}
+
+.nav-list {
+  padding-top: 48px;
+  padding-left: 25px;
+}
+
+.nav-list-item:not(:first-child) {
+  margin-top: 32px;
+}
+
+.menu-list {
+  margin-top: 302px;
+  padding-left: 25px;
+}
+
+.menu-list__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.menu-social-list {
+  display: flex;
+  margin-top: 64px;
+  padding-left: 25px;
+}
+
+.menu-social-list__item:not(:first-child) {
+  margin-left: 20px;
 }

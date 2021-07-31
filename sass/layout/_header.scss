@@ -177,12 +177,18 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
+
+  &:hover .burger-btn__icon,
+  &:focus .burger-btn__icon {
+    fill: var(--accent-color);
+  }
 }
 
 .burger-btn__icon {
   width: 40px;
   height: 40px;
   fill: var(--logo-studio);
+  transition: fill 250ms var(--accent-color);
 }
 
 .mobile-menu {
@@ -193,6 +199,16 @@
   width: 100vw;
   height: 100vh;
   background-color: var(--title-text-color);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .mobile-menu__btn {
@@ -202,15 +218,23 @@
   background-color: transparent;
   border: none;
   padding: 0;
+
+  &:hover .mobile-menu__btn-icon,
+  &:focus .mobile-menu__btn-icon {
+    fill: var(--accent-color);
+  }
 }
 
 .mobile-menu__btn-icon {
   width: 40px;
   height: 40px;
+  transition: fill 250ms var(--cubic);
 }
 
 .mobile-menu__container {
   position: relative;
+  padding-top: 48px;
+  padding-left: 40px;
 }
 
 .nav-list_link,
@@ -221,8 +245,17 @@
   letter-spacing: 0.02em;
 }
 
+.nav-list_link {
+  transition: color 250ms var(--cubic);
+  &:hover,
+  &:focus {
+    color: Var(--accent-color);
+  }
+}
+
 .menu-list_tel {
   font-size: 34px;
+  color: var(--accent-color);
 }
 
 .menu-list_mail {
@@ -239,11 +272,7 @@
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-}
-
-.nav-list {
-  padding-top: 48px;
-  padding-left: 25px;
+  color: var(--accent-color);
 }
 
 .nav-list-item:not(:first-child) {
@@ -252,7 +281,6 @@
 
 .menu-list {
   margin-top: 302px;
-  padding-left: 25px;
 }
 
 .menu-list__item:not(:last-child) {
@@ -262,17 +290,10 @@
 .menu-social-list {
   display: flex;
   margin-top: 64px;
-  padding-left: 25px;
 }
 
 .menu-social-list__item:not(:first-child) {
-  margin-left: 20px;
-}
-
-.menu-social-list__link {
-  border-left: 6px solid green;
-  height: 30px;
-  left: 50%;
-  margin-left: -3px;
-  top: 0;
+  border-left: 1px solid var(--form-border-color);
+  padding-left: 10px;
+  margin-left: 10px;
 }

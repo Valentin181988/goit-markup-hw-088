@@ -6,6 +6,10 @@
 .header-container {
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+  }
 }
 
 .header-nav {
@@ -16,6 +20,10 @@
 .menu {
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .menu-contacts {
@@ -23,6 +31,10 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
   }
 }
 
@@ -34,7 +46,9 @@
 
 .header__logo {
   .header__header-nav & {
-    margin-right: 88px;
+    @media screen and (min-width: 768px) {
+      margin-right: 88px;
+    }
 
     @media screen and (min-width: 1200px) {
       margin-right: 93px;
@@ -154,4 +168,19 @@
     width: 10px;
     height: 16px;
   }
+}
+
+.burger-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.burger-btn__icon {
+  width: 40px;
+  height: 40px;
+  fill: var(--logo-studio);
 }

@@ -134,6 +134,13 @@ img {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
 .studio {
   color: var(--logo-studio);
 }
@@ -235,6 +242,12 @@ img {
   align-items: center;
 }
 
+@media screen and (max-width: 767px) {
+  .header-container {
+    justify-content: space-between;
+  }
+}
+
 .header-nav {
   display: flex;
   align-items: center;
@@ -243,6 +256,12 @@ img {
 .menu {
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
 }
 
 .menu-contacts {
@@ -256,14 +275,22 @@ img {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .menu-contacts {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .menu-contacts__mail {
     margin-right: 50px;
   }
 }
 
-.header__header-nav .header__logo {
-  margin-right: 88px;
+@media screen and (min-width: 768px) {
+  .header__header-nav .header__logo {
+    margin-right: 88px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -387,6 +414,24 @@ img {
     width: 10px;
     height: 16px;
   }
+}
+
+.burger-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .burger-btn {
+    display: none;
+  }
+}
+
+.burger-btn__icon {
+  width: 40px;
+  height: 40px;
+  fill: var(--logo-studio);
 }
 
 .hero {

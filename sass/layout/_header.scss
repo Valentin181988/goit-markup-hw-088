@@ -268,3 +268,11 @@
 .menu-social-list__item:not(:first-child) {
   margin-left: 20px;
 }
+
+.menu-social-list__link {
+  border-left: 6px solid green;
+  height: 30px;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+}

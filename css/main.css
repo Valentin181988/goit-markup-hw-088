@@ -517,6 +517,14 @@ img {
   margin-left: 20px;
 }
 
+.menu-social-list__link {
+  border-left: 6px solid green;
+  height: 30px;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+}
+
 .hero {
   background-color: var(--hero-bg);
   text-align: center;

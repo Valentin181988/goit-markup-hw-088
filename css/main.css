@@ -88,8 +88,15 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .container {
@@ -461,7 +468,7 @@ img {
   background-image: linear-gradient(var(--gradient-hero)), url("../images/hero/hero-mobile.jpg");
 }
 
-@media (min-device-pixel-ratio: 2) and (min-width: 280px), (min-resolution: 192dpi) and (min-width: 280px), (min-resolution: 2dppx) and (min-width: 280px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 280px), screen and (min-resolution: 192dpi) and (min-width: 280px), screen and (min-resolution: 2dppx) and (min-width: 280px) {
   .overlay {
     background-image: linear-gradient(var(--gradient-hero)), url("../images/hero/hero-mobile@2x.jpg");
   }
@@ -473,7 +480,7 @@ img {
   }
 }
 
-@media (min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .overlay {
     background-image: linear-gradient(var(--gradient-hero)), url("../images/hero/hero-tablet@2x.jpg");
   }
@@ -485,7 +492,7 @@ img {
   }
 }
 
-@media (min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .overlay {
     background-image: linear-gradient(var(--gradient-hero)), url("../images/hero/hero-desktop@2x.jpg");
   }
@@ -1271,6 +1278,12 @@ img {
   }
 }
 
+.mobile-menu__container {
+  position: relative;
+  padding-top: 48px;
+  padding-left: 40px;
+}
+
 .burger-btn {
   background-color: transparent;
   border: none;
@@ -1332,12 +1345,6 @@ img {
   width: 40px;
   height: 40px;
   transition: fill 250ms var(--cubic);
-}
-
-.mobile-menu__container {
-  position: relative;
-  padding-top: 48px;
-  padding-left: 40px;
 }
 
 .nav-list_link,

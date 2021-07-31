@@ -1000,11 +1000,17 @@ img {
 .modal-form__head {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-color);
   margin-bottom: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form__head {
+    line-height: 1.15;
+  }
 }
 
 .modal-form__input {
@@ -1072,11 +1078,18 @@ img {
   color: var(--accent-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .modal-form__label-link {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
 .modal-form__label-link::after {
   content: '';
   position: absolute;
   left: 0;
-  bottom: 6px;
+  bottom: 1px;
   display: block;
   width: 100%;
   height: 0.1px;
@@ -1084,9 +1097,8 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .modal-form__label-link {
-    font-size: 14px;
-    line-height: 1.71;
+  .modal-form__label-link::after {
+    bottom: 6px;
   }
 }
 

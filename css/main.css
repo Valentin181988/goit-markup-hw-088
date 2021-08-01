@@ -1394,6 +1394,10 @@ img {
   letter-spacing: 0.02em;
 }
 
+.nav-list_link.menu__link_active-link {
+  color: var(--accent-color);
+}
+
 .nav-list_link {
   transition: color 250ms var(--cubic);
 }

@@ -2,8 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
 
   color: var(--secondary-text-color);
@@ -31,5 +31,10 @@
   .modal-form__checkbox:hover + &::before,
   .modal-form__checkbox:focus + &::before {
     outline: 2px solid var(--accent-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 24px;
   }
 }

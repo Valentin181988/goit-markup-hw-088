@@ -1,15 +1,15 @@
 .header {
   background-color: var(--title-text-color);
   border-bottom: 1px solid var(--line);
-
-  &__menu-contacts {
-    margin-left: auto;
-  }
 }
 
 .header-container {
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+  }
 }
 
 .header-nav {
@@ -20,20 +20,39 @@
 .menu {
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .menu-contacts {
-  display: flex;
-  align-items: center;
+  margin-left: auto;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .menu-contacts__mail {
-  margin-right: 50px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+  }
 }
 
 .header__logo {
   .header__header-nav & {
-    margin-right: 93px;
+    @media screen and (min-width: 768px) {
+      margin-right: 88px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 93px;
+    }
   }
 }
 
@@ -41,8 +60,7 @@
   margin-right: 50px;
 }
 
-.menu__link,
-.menu-contacts__link {
+.menu__link {
   display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -50,6 +68,28 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   transition: color 250ms var(--cubic);
+}
+
+.menu-contacts__link {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  transition: color 250ms var(--cubic);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.menu-contacts__mail {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 10px;
+  }
 }
 
 .menu__link {
@@ -73,13 +113,16 @@
 
     position: absolute;
     left: 0;
-    bottom: -1.5px;
-
+    bottom: -1px;
     display: block;
     width: 100%;
     height: 4px;
     border-radius: 2px;
     background-color: var(--accent-color);
+
+    @media screen and (min-width: 1200px) {
+      bottom: -1.5px;
+    }
   }
 }
 
@@ -104,5 +147,25 @@
   .menu-contacts__link:hover &,
   .menu-contacts__link:focus & {
     fill: var(--accent-color);
+  }
+}
+
+.mail {
+  width: 14px;
+  height: 10px;
+
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.tel {
+  width: 10px;
+  height: 14px;
+
+  @media screen and (min-width: 1200px) {
+    width: 10px;
+    height: 16px;
   }
 }

@@ -1323,6 +1323,12 @@ img {
   padding-left: 40px;
 }
 
+@media screen and (min-width: 768px) {
+  .mobile-menu__container {
+    width: 480px;
+  }
+}
+
 .burger-btn {
   background-color: transparent;
   border: none;

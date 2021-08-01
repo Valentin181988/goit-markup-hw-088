@@ -14,7 +14,7 @@
 .footer_wrapper {
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: space-between;
+    //justify-content: space-between;
   }
 }
 
@@ -51,6 +51,10 @@
 }
 
 .footer-contacts {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    padding-left: 61px;
+  }
+
   @media screen and (min-width: 1200px) {
     margin-right: 83px;
   }
@@ -65,6 +69,9 @@
 }
 
 .connect {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    margin-left: 190px;
+  }
   @media screen and (max-width: 767px) {
     margin-top: 60px;
   }
@@ -87,7 +94,7 @@
 .footer-form__footer-title {
   margin-bottom: 20px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     padding-top: 12px;
   }
 }

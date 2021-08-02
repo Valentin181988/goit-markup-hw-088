@@ -1360,6 +1360,18 @@ img {
   margin-left: 10px;
 }
 
+@media screen and (min-width: 280px) and (max-width: 414px) {
+  .menu-social-list__item:nth-child(4) {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 322px) {
+  .menu-social-list__item:nth-child(3) {
+    margin-top: 20px;
+  }
+}
+
 .menu-list__item:not(:last-child) {
   margin-bottom: 32px;
 }

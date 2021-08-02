@@ -973,7 +973,7 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .wigets {
     justify-content: center;
     margin-bottom: 30px;
@@ -1139,6 +1139,13 @@ img {
   }
 }
 
+@media screen and (max-width: 449px) {
+  .modal {
+    width: 100%;
+    height: 100%;
+  }
+}
+
 .close-btn {
   position: absolute;
   display: flex;
@@ -1278,6 +1285,9 @@ img {
   width: 100%;
   height: 0.1px;
   background-color: var(--accent-color);
+  /*@media screen and (max-width: 258px) {
+    width: 52%;
+  }*/
 }
 
 @media screen and (min-width: 1200px) {

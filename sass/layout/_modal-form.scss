@@ -118,7 +118,7 @@
     bottom: 6px;
   }
 
-  /*@media screen and (max-width: 258px) {
-    width: 52%;
-  }*/
+  @media screen and (min-width: 278px) and (max-width: 448px) {
+    width: 100%;
+  }
 }
